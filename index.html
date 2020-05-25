@@ -18,12 +18,12 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
+    background-color: beige; /* beige */
+    color: #ff7a5c;
   }
   .bg-2 { 
     background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
+    color: ghostwhite;
   }
   .bg-3 { 
     background-color: #ffffff; /* White */
@@ -53,6 +53,15 @@
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+  .carousel {
+    background-color: beige;      
+      } 
+  .carousel-wrap {
+    border: 2px solid #ffad82;
+      } 
+  .carousel-wrapbox {
+    box-shadow: 4px 4px 20px grey;  
+      }  
   </style>
 </head>
 <body>
@@ -86,7 +95,7 @@
 </div>
 
 <!-- Carousel -->
-<div class="container">
+<div class="container-fluid carousel">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -96,7 +105,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner carousel-wrap carousel-wrapbox">
       <div class="item active">
         <img src="balcony1.jpg" alt="balcony1" style="width:100%;">
         <div class="carousel-caption">
@@ -132,7 +141,7 @@
 <!-- First Container -->
 <div id="firstsector" class="container-fluid bg-1 text-center">
   <h1 class="margin">Balcony</h1>
-  <img src="balcony1.jpg" class="img-responsive img-circle margin" style="display:inline" alt="balcony" width="350" height="350">
+  <img src="balcony1.jpg" class="img-responsive img-circle margin carousel-wrap" style="display:inline" alt="balcony" width="350" height="350">
   <h3>I'm a balcony</h3>
 </div>
 
